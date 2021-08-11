@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
 body {
   margin: 0;
   padding: 0;
@@ -13,6 +15,7 @@ header {
   align-items: center;
   padding: 0 20px;
   font-size: 18px;
+  font-family: Inter;
   justify-content: space-between;
   background-color: #1C1A19;
 }
@@ -77,6 +80,7 @@ header {
 }
 
 .headline-text-contents > h5 {
+  font-family: Inter;
   margin-top: -20px;
   font-weight: 500;
   font-size: 20px;
@@ -86,10 +90,9 @@ header {
 
 .headline-text-contents > p {
   font-family: Inter;
-  margin-top: -20px;
+  margin-top: -10px;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 20px;
   color: #F4F5F7;
 }
-
