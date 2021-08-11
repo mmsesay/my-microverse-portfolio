@@ -60,9 +60,8 @@ header {
 
 .headline-text-contents {
   width: auto;
-  margin-left: 5px;
-  padding-top: -20px;
-  padding: 0 20px;
+  margin-left: 1px;
+  padding: 0 10px;
   display: flex;
   flex-direction: column;
   font-style: normal;
@@ -83,12 +82,13 @@ header {
   font-weight: 500;
   font-size: 20px;
   line-height: 10px;
-  color: #ffffff;
+  color: #fff;
 }
 
 .headline-text-contents > p {
   font-family: Inter, sans-serif;
   margin-top: -10px;
+  text-align: justify;
   font-weight: normal;
   font-size: 15px;
   line-height: 20px;
