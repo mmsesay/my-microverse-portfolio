@@ -5,26 +5,35 @@ body {
   overflow: hidden;
 }
 
+.d-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* Start of header styles */
 header {
-  height: 72px;
+  height: 50px;
   color: white;
   display: flex;
   align-items: center;
-  padding: 0 20px;
+  padding: 10px 20px;
   font-size: 18px;
   font-family: Inter, sans-serif;
   justify-content: space-between;
-  background-color: #1c1a19;
+  background-color: #3e3c3c;
 }
 
-#bars > svg {
+header > a {
   color: white;
-  width: 25px;
-  height: 25px;
+  text-decoration: none;
 }
 
-#bars > svg:hover {
+#bars > i {
+  font-size: 20px;
+}
+
+#bars > i:hover {
   color: yellow;
 }
 
@@ -32,63 +41,59 @@ header {
 .headline-section {
   width: 100%;
   height: 100vh;
-  margin-top: -20px;
   overflow: hidden;
   display: flex;
-  background-image: url("/public/images/headline-section.png");
+  align-items: center;
+  justify-content: center;
+  background-color: #1c1a19;
+  /* background-image: url("/public/images/headline-section.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
 }
 
 .sider-icons-menu {
-  width: 80px;
-  height: 100%;
-  padding: 0 20px;
   color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-size: 18px;
-  background-color: #1c1a19;
 }
 
-.sider-icons-menu > span {
-  padding: 15px 0;
+.sider-icons-menu > ul {
+  display: flex;
+  margin-left: -40px;
+}
+
+.sider-icons-menu > ul > li {
+  list-style: none;
+  font-size: 20px;
+  padding: 0 5px;
 }
 
 .headline-text-contents {
-  width: auto;
-  margin-left: 1px;
+  margin-top: -100px;
+  margin-left: 2px;
   padding: 0 10px;
-  display: flex;
-  flex-direction: column;
-  font-style: normal;
-  justify-content: center;
 }
 
-.headline-text-contents > h3 {
+.headline-text-contents > h1 {
   font-family: Crete Round, sans-serif;
   font-weight: normal;
-  font-size: 35px;
-  line-height: 40px;
+  font-size: 56px;
+  line-height: 50px;
   color: #f55800;
 }
 
 .headline-text-contents > h5 {
-  font-family: Inter, sans-serif;
+  font-family: Roboto, sans-serif;
   margin-top: -20px;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 25px;
   line-height: 10px;
-  color: #fff;
+  color: #fff5e1;
 }
 
 .headline-text-contents > p {
-  font-family: Inter, sans-serif;
+  font-family: Poppins, sans-serif;
   margin-top: -10px;
-  text-align: justify;
   font-weight: normal;
   font-size: 15px;
   line-height: 20px;
