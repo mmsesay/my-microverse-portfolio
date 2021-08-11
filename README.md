@@ -2,6 +2,8 @@
 
 > This is the skeleton and setup of mobile version for my portfolio
 
+![screenshot](./public/images/skeleton-screenshot.png)
+
 ## Built With
 
 - HTML & CSS
