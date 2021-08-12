@@ -28,4 +28,3 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 - microverseinc for the readme template
-- pikisuperstar at [freepik](http://www.freepik.com) for the background image
