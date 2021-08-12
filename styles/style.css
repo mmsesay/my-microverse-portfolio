@@ -261,7 +261,7 @@ header > a {
 /* About Section styles */
 .about-section {
   margin-top: -50px;
-  height: 120vh;
+  height: auto;
 }
 
 .about-section-content {
@@ -297,4 +297,44 @@ header > a {
   position: absolute;
   align-items: center;
   margin-top: 215px;
+}
+
+.about-categories-container {
+  margin-top: 70%;
+}
+
+.about-categories-container .category-item {
+  width: 100%;
+  margin-left: -50px;
+  margin-bottom: -40px;
+  list-style: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.category-title {
+  margin: 45px 40px 30px 40px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.category-subtitle {
+  font-size: 22px;
+  padding: 8px 0;
+  margin: 0 30px 30px 50px;
+}
+
+.shape-size {
+  width: 18px;
+  height: 18px;
+  margin-right: 15px;
+}
+
+.diamond-shape {
+  transform: rotate(-45deg);
+}
+
+.circle-shape {
+  border-radius: 150px;
 }
