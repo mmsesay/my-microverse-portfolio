@@ -5,12 +5,6 @@ body {
   overflow: hidden;
 }
 
-.d-flex {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 /* Start of header styles */
 header {
   height: 50px;
@@ -46,10 +40,6 @@ header > a {
   align-items: center;
   justify-content: center;
   background-color: #1c1a19;
-  /* background-image: url("/public/images/headline-section.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; */
 }
 
 .sider-icons-menu {
@@ -72,6 +62,7 @@ header > a {
   margin-top: -100px;
   margin-left: 2px;
   padding: 0 10px;
+  z-index: 20;
 }
 
 .headline-text-contents > h1 {
@@ -98,4 +89,19 @@ header > a {
   font-size: 15px;
   line-height: 20px;
   color: #f4f5f7;
+}
+
+.headline-illustration-container {
+  position: absolute;
+  width: 100%;
+  right: 0;
+  top: 40%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+#headline-illustration {
+  right: -10%;
+  left: 40%;
+  margin-left: 60%;
 }
