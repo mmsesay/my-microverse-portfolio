@@ -7,15 +7,13 @@ Headline                                          |  Recent Work
 :------------------------------------------------:|:-----------------------------------------------:
 ![](./public/images/screenshots/headline-sc.png)  |  ![](./public/images/screenshots/work-op-sc.png)
 
-Projects                                          |  About Myself
+Project Card                                      |  About Myself
 :------------------------------------------------:|:-----------------------------------------------:
 ![](./public/images/screenshots/project-sc.png)   |  ![](./public/images/screenshots/about-sc.png)
 
-Categories                                        |  Solarized Ocean
-:------------------------------------------------:|:--------------------------------------------:
-![](./public/images/screenshots/about-op-sc.png)  |  ![](./public/images/screenshots/work-sc.png)
-
-<!-- (./public/images/skeleton-screenshot.png) -->
+Categories                                        |
+:------------------------------------------------:|
+![](./public/images/screenshots/about-op-sc.png)  |
 
 ## Built With
 
