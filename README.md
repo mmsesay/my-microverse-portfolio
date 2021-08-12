@@ -2,7 +2,20 @@
 
 > This is the skeleton and setup of mobile version for my portfolio
 
-![screenshot](./public/images/skeleton-screenshot.png)
+![screenshot]
+Headline                                          |  Recent Work
+:------------------------------------------------:|:-----------------------------------------------:
+![](./public/images/screenshots/headline-sc.png)  |  ![](./public/images/screenshots/work-op-sc.png)
+
+Projects                                          |  About Myself
+:------------------------------------------------:|:-----------------------------------------------:
+![](./public/images/screenshots/project-sc.png)   |  ![](./public/images/screenshots/about-sc.png)
+
+Categories                                        |  Solarized Ocean
+:------------------------------------------------:|:--------------------------------------------:
+![](./public/images/screenshots/about-op-sc.png)  |  ![](./public/images/screenshots/work-sc.png)
+
+<!-- (./public/images/skeleton-screenshot.png) -->
 
 ## Built With
 
