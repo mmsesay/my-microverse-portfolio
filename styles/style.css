@@ -261,14 +261,23 @@ header > a {
 /* About Section styles */
 .about-section {
   margin-top: -50px;
-  padding: 0 30px;
-  height: auto;
+  height: 120vh;
+}
+
+.about-section-content {
+  padding: 30px 20px;
+}
+
+.about-section > img {
+  margin-top: -82px;
+  position: absolute;
+  right: 0;
 }
 
 .about-section-content > h1 {
   font-size: 60px;
-  text-align: center;
-  padding-top: 100px;
+  text-align: left;
+  padding-top: 50px;
   margin-bottom: 10px;
 }
 
@@ -281,4 +290,11 @@ header > a {
 .about-section-content > button {
   width: auto;
   padding: 12px;
+}
+
+.about-section-content > hr {
+  width: 90%;
+  position: absolute;
+  align-items: center;
+  margin-top: 215px;
 }
