@@ -125,6 +125,14 @@ header > a {
   cursor: pointer;
 }
 
+.sider-icons-menu > ul > li > a {
+  color: #fff;
+}
+
+.sider-icons-menu > ul > li > a:hover {
+  color: #ff6b00;
+}
+
 .headline-text-contents {
   margin-top: -100px;
   margin-left: 2px;
