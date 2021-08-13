@@ -78,9 +78,14 @@ body {
 }
 
 .box {
-  padding: 1px 10px;
-  margin-right: 20px;
+  padding: 7px 10px;
+  margin-right: 10px;
   margin-bottom: 15px;
+  list-style: none;
+}
+
+.box-container > ul {
+  padding-left: 0;
 }
 
 /* Start of header styles */
