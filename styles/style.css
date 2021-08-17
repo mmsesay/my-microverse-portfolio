@@ -4,7 +4,6 @@ body {
   width: 100vw;
   height: 100vw;
   overflow-x: hidden;
-  overflow-y: auto;
 }
 
 /* Generic Styles */
@@ -275,6 +274,7 @@ header > a {
 .about-section {
   margin-top: -50px;
   height: auto;
+  overflow-x: hidden;
 }
 
 .about-section-content {
@@ -317,7 +317,7 @@ header > a {
 }
 
 .about-categories-container .category-item {
-  width: 100%;
+  /* width: 100%; */
   margin-left: -50px;
   margin-bottom: -40px;
   list-style: none;
@@ -352,11 +352,12 @@ header > a {
   border-radius: 150px;
 }
 
-/*My-contacts form*/
+/* My-contacts form */
 
 .contact-section {
   height: auto;
   width: auto;
+  overflow-x: hidden;
 }
 
 .contact-container {
@@ -404,13 +405,6 @@ header > a {
   text-align: center;
 }
 
-.footer-icons > li {
-  /* justify-content: space-evenly; */
-  list-style: none;
-  padding-top: 30px;
-  /* margin: 0 10px; */
-}
-
 footer {
   height: 100px;
   margin-top: -20px;
@@ -419,21 +413,25 @@ footer {
   flex-direction: column;
 }
 
-.footer-icons {
-  background-color: yellow;
-  justify-content: flex-start;
+footer .footer-icons > ul {
+  justify-content: center !important;
 }
 
-.footer-icons > ul {
-  left: -10%;
+footer .footer-icons > li {
+  padding: 0 10px;
+}
+
+.footer-li-a {
+  color: #505f79;
+}
+
+.footer-icons {
+  padding: 5px 5px;
+  list-style: none;
 }
 
 .bg-contact-color {
   background-color: #e5e5e5;
-}
-
-.footer-icons > li > a {
-  color: #505f79;
 }
 
 .contact-para {
