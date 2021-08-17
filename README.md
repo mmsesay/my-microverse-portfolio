@@ -11,9 +11,9 @@ Project Card                                      |  About Myself
 :------------------------------------------------:|:-----------------------------------------------:
 ![](./public/images/screenshots/project-sc.png)   |  ![](./public/images/screenshots/about-sc.png)
 
-Categories                                        |
-:------------------------------------------------:|
-![](./public/images/screenshots/about-op-sc.png)  |
+Categories                                        |  Contact Form
+:------------------------------------------------:|:-----------------------------------------------:
+![](./public/images/screenshots/about-op-sc.png)  |  ![](./public/images/screenshots/contact-sc.png)  |
 
 ## Built With
 
@@ -24,6 +24,12 @@ Categories                                        |
 👤 **Author1**
 
 - GitHub: [@mmsesay](https://github.com/mmsesay)
+- Twitter: [@DeeMaejor](https://twitter.com/DeeMaejor)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/muhammad-m-sesay)
+
+👤 **Author1**
+
+- GitHub: [@1GORDON](https://github.com/1GORDON)
 - Twitter: [@DeeMaejor](https://twitter.com/DeeMaejor)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/muhammad-m-sesay)
 
