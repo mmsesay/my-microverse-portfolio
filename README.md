@@ -30,8 +30,8 @@ Categories                                        |  Contact Form
 👤 **Author2**
 
 - GitHub: [@1GORDON](https://github.com/1GORDON)
-- Twitter: [@DeeMaejor](https://twitter.com/DeeMaejor)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/muhammad-m-sesay)
+- Twitter: [@GTinyefuza](https://twitter.com/Tinyefuza)
+- LinkedIn: [LinkedIn](www.linkedin.com/in/tinyefuza-gordon-935747213 )
 
 ## 🤝 Contributing
 
