@@ -323,15 +323,15 @@ header {
 }
 
 .about-categories-container {
-  margin-top: 70%;
+  margin-top: 50%;
+  flex-direction: column;
+  padding-bottom: 30%;
 }
 
 .about-categories-container .category-item {
   margin-left: -50px;
   margin-bottom: -40px;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
 .category-title {
@@ -361,7 +361,6 @@ header {
 }
 
 /* My-contacts form */
-
 .contact-section {
   height: auto;
   width: auto;
@@ -614,5 +613,52 @@ footer .footer-icons > li {
 
   .mobile-item-card {
     display: none;
+  }
+
+  /* About Section styles */
+  .about-section {
+    padding: 0 5%;
+  }
+
+  .about-section > img {
+    width: 40%;
+    margin-top: -17%;
+  }
+
+  .about-section .about-section-content > h1 {
+    font-size: 72px;
+  }
+
+  .about-section-content .text {
+    width: 40%;
+    line-height: 32px;
+    font-size: 20px;
+  }
+
+  .about-categories-container {
+    margin-top: 15%;
+    padding-bottom: 5%;
+    display: grid;
+    grid-template-columns: 40% 40% 40%;
+    justify-content: center;
+  }
+
+  .about-categories-container .category-item {
+    margin: auto;
+    align-items: flex-start;
+  }
+
+  .about-categories-container .category-item-1 {
+    margin-top: 0;
+  }
+
+  .category-title {
+    margin: 45px 40px 30px 40px;
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  .category-subtitle {
+    text-align: left !important;
   }
 }
