@@ -1,341 +1,499 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter&display=swap" rel="stylesheet">
-  <link
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
     />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-  <title>My Portfolio</title>
-</head>
-<body>
-  <header class="d-flex font-inter">
-    <a href="#" class="text-white no-underline">John Doe</a>
-    <nav class="d-flex space-x">
-      <ul class="d-flex space-x nav-links list-none">
-        <li><a href="#" class="text-white no-underline">Portfolio</a></li>
-        <li><a href="#" class="text-white no-underline">About</a></li>
-        <li><a href="#" class="text-white no-underline">Contact</a></li>
-        <li><a href="#" class="text-white no-underline"><i class="far fa-envelope"></i></a></li>
-      </ul>
-      <span id="bars">
-        <i class="fas fa-bars"></i>
-      </span>
-    </nav>
-  </header>
-  <section class="headline-section d-flex secondary-color">
-    <div class="sider-menu d-flex text-white font-size-medium">
-      <ul class="list-none">
-        <li><a href="#" class="text-white"><i class="fab fa-github icons"></i></a></li>
-        <li><a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a></li>
-        <li><a href="#" class="text-white"><i class="fab fa-angellist"></i></a></li>
-        <li><a href="#" class="text-white"><i class="fab fa-twitter"></i></a></li>
-        <li><a href="#" class="text-white"><i class="fab fa-medium-m"></i></a></li>
-      </ul>
-    </div>
-    <div class="headline-text-contents">
-      <h1 class="font-crete-round text-xl primary-text">Hey There. <br>I&apos;m Alex</h1>
-      <h5>I am a Software Developer</h5>
-      <p class="text-lg">
-        I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, 
-        don’t hestiate to contact me.
-      </p>
-      <div class="mobile-version-icons text-white font-size-medium">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <title>My Portfolio</title>
+  </head>
+  <body>
+    <header class="d-flex font-inter">
+      <a href="#" class="text-white no-underline">John Doe</a>
+      <nav class="d-flex space-x">
+        <ul class="d-flex space-x hide-on-small show-on-large list-none">
+          <li><a href="#" class="text-white no-underline">Portfolio</a></li>
+          <li><a href="#" class="text-white no-underline">About</a></li>
+          <li><a href="#" class="text-white no-underline">Contact</a></li>
+          <li>
+            <a href="#" class="text-white no-underline"
+              ><i class="far fa-envelope"></i
+            ></a>
+          </li>
+        </ul>
+        <span class="bars hide-on-large">
+          <i class="fas fa-bars"></i>
+        </span>
+      </nav>
+    </header>
+    <section class="headline-section d-flex secondary-color">
+      <div
+        class="
+          sider-menu
+          show-on-large
+          hide-on-small
+          d-flex
+          text-white
+          font-size-medium
+        "
+      >
         <ul class="list-none">
-          <li><a href="#"><i class="fab fa-github icons"></i></a></li>
-          <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-          <li><a href="#"><i class="fab fa-angellist"></i></a></li>
-          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-          <li><a href="#"><i class="fab fa-medium-m"></i></a></li>
+          <li>
+            <a href="#" class="text-white"
+              ><i class="fab fa-github icons"></i
+            ></a>
+          </li>
+          <li>
+            <a href="#" class="text-white"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+          </li>
+          <li>
+            <a href="#" class="text-white"><i class="fab fa-angellist"></i></a>
+          </li>
+          <li>
+            <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#" class="text-white"><i class="fab fa-medium-m"></i></a>
+          </li>
         </ul>
       </div>
-    </div>
-    <div class="desktop-headline-bg-section d-flex">
-      <div class="desktop-headline-bg-container">
-        <img class="desktop-headline-bg" src="./public/images/Illustration-header@2x.png" alt="background-illustration-image">
-      </div>
-    </div>
-  </section>
-  <section class="works-section">
-    <div class="d-flex intro">
-      <h1 class="font-crete-round text-xl heading-recent-works">My Recent Works</h1>
-      <div class="ruler"></div>
-    </div>
-    <hr>
-    <div class="multi-post-container d-flex">
-      <img src="/public/images/img-placeholder-1.png" alt="multi-post-image">
-      <div class="multi-post-content">
-        <h2 class="font-crete-round">Multi-Post Stories</h2>
-        <p class="font-inter">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.
+      <div class="headline-text-contents">
+        <h1 class="font-crete-round text-xl primary-text">
+          Hey There. <br />I&apos;m Alex
+        </h1>
+        <h5>I am a Software Developer</h5>
+        <p class="text-lg">
+          I can help you build a product , feature or website Look through some
+          of my work and experience! If you like what you see and have a project
+          you need coded, don’t hestiate to contact me.
         </p>
-        <div class="box-container">
-          <ul class="d-flex font-inter list-none">
-            <li class="box">css</li>
-            <li class="box">html</li>
-            <li class="box">bootstrap</li>
-            <li class="box">Ruby</li>
+        <div class="mobile-version-icons text-white font-size-medium">
+          <ul class="list-none show-on-small hide-on-large">
+            <li>
+              <a href="#"><i class="fab fa-github icons"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-angellist"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-medium-m"></i></a>
+            </li>
           </ul>
         </div>
-        <button class="primary-button primary-color font-inter">See Project</button>
       </div>
-    </div>
-    <div class="grid-container">
-      <div class="grid-items d-flex grid-item-1">
-        <div class="grid-item-card text-white">
-          <div class="grid-item-card-content mobile-item-card">
-            <h2 class="font-crete-round">Profesional Art Printing Data</h2>
-            <p class="font-inter">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard
-            </p>
-            <div class="box-container d-flex">
-              <ul class="d-flex font-inter list-none">
-                <li class="box">html</li>
-                <li class="box">bootstrap</li>
-                <li class="box">Ruby</li>
-              </ul>
-            </div>
-          </div>
-          <button class="primary-button primary-color font-inter">See Project</button>
+      <div class="desktop-headline-bg-section d-flex">
+        <div class="desktop-headline-bg-container">
+          <img
+            class="desktop-headline-bg"
+            src="./public/images/Illustration-header@2x.png"
+            alt="background-illustration-image"
+          />
         </div>
       </div>
-      <div class="grid-items d-flex grid-item-2">
-        <div class="grid-item-card text-white mobile-item-card">
-          <div class="grid-item-card-content">
-            <h2 class="font-crete-round">Profesional Art Printing Data</h2>
-            <p class="font-inter">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard
-            </p>
-            <div class="box-container">
-              <ul class="d-flex font-inter list-none">
-                <li class="box">html</li>
-                <li class="box">bootstrap</li>
-                <li class="box">Ruby</li>
-              </ul>
+    </section>
+    <section class="works-section">
+      <div class="d-flex intro">
+        <h1 class="font-crete-round text-xl heading-recent-works">
+          My Recent Works
+        </h1>
+        <div class="ruler hide-on-small show-on-large"></div>
+      </div>
+      <hr />
+      <div class="multi-post-container d-flex">
+        <img
+          src="/public/images/img-placeholder-1.png"
+          alt="multi-post-image"
+        />
+        <div class="multi-post-content">
+          <h2 class="font-crete-round">Multi-Post Stories</h2>
+          <p class="font-inter">
+            A daily selection of privately personalized reads; no accounts or
+            sign-ups required. has been the industry's standard dummy text ever
+            since the 1500s, when an unknown printer took a standard dummy text.
+          </p>
+          <div class="box-container">
+            <ul class="d-flex font-inter list-none">
+              <li class="box">css</li>
+              <li class="box">html</li>
+              <li class="box">bootstrap</li>
+              <li class="box">Ruby</li>
+            </ul>
+          </div>
+          <button class="primary-button primary-color font-inter">
+            See Project
+          </button>
+        </div>
+      </div>
+      <div class="grid-container">
+        <div class="grid-items d-flex grid-item-1">
+          <div class="grid-item-card text-white">
+            <div class="grid-item-card-content mobile-item-card">
+              <h2 class="font-crete-round">Profesional Art Printing Data</h2>
+              <p class="font-inter">
+                A daily selection of privately personalized reads; no accounts
+                or sign-ups required. has been the industry's standard
+              </p>
+              <div class="box-container d-flex">
+                <ul class="d-flex font-inter list-none">
+                  <li class="box">html</li>
+                  <li class="box">bootstrap</li>
+                  <li class="box">Ruby</li>
+                </ul>
+              </div>
+            </div>
+            <button class="primary-button primary-color font-inter">
+              See Project
+            </button>
+          </div>
+        </div>
+        <div class="grid-items d-flex grid-item-2">
+          <div class="grid-item-card text-white mobile-item-card">
+            <div class="grid-item-card-content">
+              <h2 class="font-crete-round">Profesional Art Printing Data</h2>
+              <p class="font-inter">
+                A daily selection of privately personalized reads; no accounts
+                or sign-ups required. has been the industry's standard
+              </p>
+              <div class="box-container">
+                <ul class="d-flex font-inter list-none">
+                  <li class="box">html</li>
+                  <li class="box">bootstrap</li>
+                  <li class="box">Ruby</li>
+                </ul>
+              </div>
+            </div>
+            <button class="primary-button primary-color font-inter">
+              See Project
+            </button>
+          </div>
+          <div class="grid-item-card text-white hide-on-small show-on-large">
+            <div class="grid-item-card-content">
+              <h2 class="font-crete-round">
+                Data Dashboard <br />
+                Healthcare
+              </h2>
+              <p class="font-inter">
+                A daily selection of privately personalized reads; no accounts
+                or sign-ups required. has been the industry's standard
+              </p>
+              <div class="box-container">
+                <ul class="d-flex font-inter list-none">
+                  <li class="box">html</li>
+                  <li class="box">bootstrap</li>
+                  <li class="box">Ruby</li>
+                </ul>
+              </div>
             </div>
           </div>
-          <button class="primary-button primary-color font-inter">See Project</button>
         </div>
-        <div class="grid-item-card text-white desktop-item-card">
-          <div class="grid-item-card-content">
-            <h2 class="font-crete-round">Data Dashboard <br> Healthcare</h2>
-            <p class="font-inter">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard
-            </p>
-            <div class="box-container">
-              <ul class="d-flex font-inter list-none">
-                <li class="box">html</li>
-                <li class="box">bootstrap</li>
-                <li class="box">Ruby</li>
-              </ul>
+        <div class="grid-items d-flex grid-item-3">
+          <div class="grid-item-card text-white mobile-item-card">
+            <div class="grid-item-card-content">
+              <h2 class="font-crete-round">Profesional Art Printing Data</h2>
+              <p class="font-inter">
+                A daily selection of privately personalized reads; no accounts
+                or sign-ups required. has been the industry's standard
+              </p>
+              <div class="box-container">
+                <ul class="d-flex font-inter list-none">
+                  <li class="box">html</li>
+                  <li class="box">bootstrap</li>
+                  <li class="box">Ruby</li>
+                </ul>
+              </div>
+            </div>
+            <button class="primary-button primary-color font-inter">
+              See Project
+            </button>
+          </div>
+          <div class="grid-item-card text-white hide-on-small show-on-large">
+            <div class="grid-item-card-content">
+              <h2 class="font-crete-round">Website Protfolio</h2>
+              <p class="font-inter">
+                A daily selection of privately personalized reads; no accounts
+                or sign-ups required. has been the industry's standard
+              </p>
+              <div class="box-container">
+                <ul class="d-flex font-inter list-none">
+                  <li class="box">html</li>
+                  <li class="box">bootstrap</li>
+                  <li class="box">Ruby</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid-items d-flex grid-item-4">
+          <div class="grid-item-card text-white mobile-item-card">
+            <div class="grid-item-card-content">
+              <h2 class="font-crete-round">Profesional Art Printing Data</h2>
+              <p class="font-inter">
+                A daily selection of privately personalized reads; no accounts
+                or sign-ups required. has been the industry's standard
+              </p>
+              <div class="box-container">
+                <ul class="d-flex font-inter list-none">
+                  <li class="box">html</li>
+                  <li class="box">bootstrap</li>
+                  <li class="box">Ruby</li>
+                </ul>
+              </div>
+            </div>
+            <button class="primary-button primary-color font-inter">
+              See Project
+            </button>
+          </div>
+          <div class="grid-item-card text-white hide-on-small show-on-large">
+            <div class="grid-item-card-content">
+              <h2 class="font-crete-round">
+                Profesional Art <br />
+                Printing Data More
+              </h2>
+              <p class="font-inter">
+                A daily selection of privately personalized reads; no accounts
+                or sign-ups required. has been the industry's standard
+              </p>
+              <div class="box-container">
+                <ul class="d-flex font-inter list-none">
+                  <li class="box">html</li>
+                  <li class="box">bootstrap</li>
+                  <li class="box">Ruby</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid-items d-flex grid-item-5">
+          <div class="grid-item-card text-white mobile-item-card">
+            <div class="grid-item-card-content">
+              <h2 class="font-crete-round">Profesional Art Printing Data</h2>
+              <p class="font-inter">
+                A daily selection of privately personalized reads; no accounts
+                or sign-ups required. has been the industry's standard
+              </p>
+              <div class="box-container">
+                <ul class="d-flex font-inter list-none">
+                  <li class="box">html</li>
+                  <li class="box">bootstrap</li>
+                  <li class="box">Ruby</li>
+                </ul>
+              </div>
+            </div>
+            <button class="primary-button primary-color font-inter">
+              See Project
+            </button>
+          </div>
+          <div class="grid-item-card text-white hide-on-small show-on-large">
+            <div class="grid-item-card-content">
+              <h2 class="font-crete-round">
+                Data Dashboard <br />
+                Healthcare
+              </h2>
+              <p class="font-inter">
+                A daily selection of privately personalized reads; no accounts
+                or sign-ups required. has been the industry's standard
+              </p>
+              <div class="box-container">
+                <ul class="d-flex font-inter list-none">
+                  <li class="box">html</li>
+                  <li class="box">bootstrap</li>
+                  <li class="box">Ruby</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid-items d-flex grid-item-6">
+          <div class="grid-item-card text-white mobile-item-card">
+            <div class="grid-item-card-content">
+              <h2 class="font-crete-round">Profesional Art Printing Data</h2>
+              <p class="font-inter">
+                A daily selection of privately personalized reads; no accounts
+                or sign-ups required. has been the industry's standard
+              </p>
+              <div class="box-container">
+                <ul class="d-flex font-inter list-none">
+                  <li class="box">html</li>
+                  <li class="box">bootstrap</li>
+                  <li class="box">Ruby</li>
+                </ul>
+              </div>
+            </div>
+            <button class="primary-button primary-color font-inter">
+              See Project
+            </button>
+          </div>
+          <div class="grid-item-card text-white hide-on-small show-on-large">
+            <div class="grid-item-card-content">
+              <h2 class="font-crete-round">Website Protfolio</h2>
+              <p class="font-inter">
+                A daily selection of privately personalized reads; no accounts
+                or sign-ups required. has been the industry's standard
+              </p>
+              <div class="box-container">
+                <ul class="d-flex font-inter list-none">
+                  <li class="box">html</li>
+                  <li class="box">bootstrap</li>
+                  <li class="box">Ruby</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="grid-items d-flex grid-item-3">
-        <div class="grid-item-card text-white mobile-item-card">
-          <div class="grid-item-card-content">
-            <h2 class="font-crete-round">Profesional Art Printing Data</h2>
-            <p class="font-inter">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard
-            </p>
-            <div class="box-container">
-              <ul class="d-flex font-inter list-none">
-                <li class="box">html</li>
-                <li class="box">bootstrap</li>
-                <li class="box">Ruby</li>
-              </ul>
-            </div>
-          </div>
-          <button class="primary-button primary-color font-inter">See Project</button>
-        </div>
-        <div class="grid-item-card text-white desktop-item-card">
-          <div class="grid-item-card-content">
-            <h2 class="font-crete-round">Website Protfolio</h2>
-            <p class="font-inter">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard
-            </p>
-            <div class="box-container">
-              <ul class="d-flex font-inter list-none">
-                <li class="box">html</li>
-                <li class="box">bootstrap</li>
-                <li class="box">Ruby</li>
-              </ul>
-            </div>
-          </div>
-        </div>
+    </section>
+    <section class="about-section secondary-color">
+      <div class="about-section-content">
+        <h1 class="font-crete-round primary-text">About me</h1>
+        <p class="text text-lg font-inter">
+          I can help you build a product , feature or website Look through some
+          of my work and experience! If you like what you see and have a project
+          you need coded, don’t hestiate to contact me.
+        </p>
+        <button class="primary-button primary-color font-inter">
+          Get My Resume
+        </button>
+        <hr />
       </div>
-      <div class="grid-items d-flex grid-item-4">
-        <div class="grid-item-card text-white mobile-item-card">
-          <div class="grid-item-card-content">
-            <h2 class="font-crete-round">Profesional Art Printing Data</h2>
-            <p class="font-inter">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard
-            </p>
-            <div class="box-container">
-              <ul class="d-flex font-inter list-none">
-                <li class="box">html</li>
-                <li class="box">bootstrap</li>
-                <li class="box">Ruby</li>
-              </ul>
-            </div>
-          </div>
-          <button class="primary-button primary-color font-inter">See Project</button>
-        </div>
-        <div class="grid-item-card text-white desktop-item-card">
-          <div class="grid-item-card-content">
-            <h2 class="font-crete-round">Profesional Art <br> Printing Data More</h2>
-            <p class="font-inter">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard
-            </p>
-            <div class="box-container">
-              <ul class="d-flex font-inter list-none">
-                <li class="box">html</li>
-                <li class="box">bootstrap</li>
-                <li class="box">Ruby</li>
-              </ul>
-            </div>
-          </div>
-        </div>
+      <img
+        src="/public/images/illustration-about-me-mobile.png"
+        alt="illustration-about-me"
+      />
+      <div class="about-categories-container">
+        <ul class="category-item d-flex text-white font-inter list-none">
+          <li class="category-title text-lg d-flex">
+            <span class="diamond-shape shape-size primary-color"></span>
+            Lanugages
+          </li>
+          <li class="category-subtitle">Javascript</li>
+          <li class="category-subtitle">Ruby</li>
+          <li class="category-subtitle">Html</li>
+          <li class="category-subtitle">Css</li>
+        </ul>
+        <ul class="category-item d-flex text-white font-inter list-none">
+          <li class="category-title text-lg d-flex">
+            <span class="shape-size primary-color"></span>
+            Frameworks
+          </li>
+          <li class="category-subtitle">Bootstrap</li>
+          <li class="category-subtitle">Ruby on Rails</li>
+          <li class="category-subtitle">RSPec</li>
+          <li class="category-subtitle">CapyBara</li>
+          <li class="category-subtitle">Selenium</li>
+        </ul>
+        <ul class="category-item d-flex text-white font-inter list-none">
+          <li class="category-title text-lg d-flex">
+            <span class="circle-shape shape-size primary-color"></span>
+            Skills
+          </li>
+          <li class="category-subtitle">Codekit</li>
+          <li class="category-subtitle">Github</li>
+          <li class="category-subtitle">Codepen</li>
+          <li class="category-subtitle">Gitlab</li>
+          <li class="category-subtitle">Terminal</li>
+        </ul>
       </div>
-      <div class="grid-items d-flex grid-item-5">
-        <div class="grid-item-card text-white mobile-item-card">
-          <div class="grid-item-card-content">
-            <h2 class="font-crete-round">Profesional Art Printing Data</h2>
-            <p class="font-inter">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard
-            </p>
-            <div class="box-container">
-              <ul class="d-flex font-inter list-none">
-                <li class="box">html</li>
-                <li class="box">bootstrap</li>
-                <li class="box">Ruby</li>
-              </ul>
-            </div>
-          </div>
-          <button class="primary-button primary-color font-inter">See Project</button>
-        </div>
-        <div class="grid-item-card text-white desktop-item-card">
-          <div class="grid-item-card-content">
-            <h2 class="font-crete-round">Data Dashboard <br> Healthcare</h2>
-            <p class="font-inter">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard
-            </p>
-            <div class="box-container">
-              <ul class="d-flex font-inter list-none">
-                <li class="box">html</li>
-                <li class="box">bootstrap</li>
-                <li class="box">Ruby</li>
-              </ul>
-            </div>
-          </div>
-        </div>
+    </section>
+    <section class="contact-section bg-contact-color">
+      <div class="contact-container d-flex">
+        <h3 class="font-inter font-center contact-para">
+          I'm always interested in hearing about new projects, so if you'd like
+          to chat please get in touch.
+        </h3>
+        <form
+          class="contacts-form d-flex"
+          action="https://formspree.io/f/moqypwqr"
+          method="POST"
+        >
+          <input
+            class="input input-text outline-none font-inter"
+            type="text"
+            name="name"
+            id="name"
+            maxlength="30"
+            placeholder="Full name"
+            required
+          />
+          <input
+            class="input input-text outline-none font-inter"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email address"
+            required
+          />
+          <textarea
+            class="input outline-none area font-inter"
+            name="message"
+            id="message"
+            cols="30"
+            rows="5"
+            maxlength="500"
+            placeholder="Enter text here"
+            required
+          ></textarea>
+          <button
+            class="primary-button primary-color color-width"
+            type="submit"
+          >
+            Get in touch
+          </button>
+        </form>
       </div>
-      <div class="grid-items d-flex grid-item-6">
-        <div class="grid-item-card text-white mobile-item-card">
-          <div class="grid-item-card-content">
-            <h2 class="font-crete-round">Profesional Art Printing Data</h2>
-            <p class="font-inter">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard
-            </p>
-            <div class="box-container">
-              <ul class="d-flex font-inter list-none">
-                <li class="box">html</li>
-                <li class="box">bootstrap</li>
-                <li class="box">Ruby</li>
-              </ul>
-            </div>
-          </div>
-          <button class="primary-button primary-color font-inter">See Project</button>
-        </div>
-        <div class="grid-item-card text-white desktop-item-card">
-          <div class="grid-item-card-content">
-            <h2 class="font-crete-round">Website Protfolio</h2>
-            <p class="font-inter">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard
-            </p>
-            <div class="box-container">
-              <ul class="d-flex font-inter list-none">
-                <li class="box">html</li>
-                <li class="box">bootstrap</li>
-                <li class="box">Ruby</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="about-section secondary-color">
-    <div class="about-section-content">
-      <h1 class="font-crete-round primary-text">About me</h1>
-      <p class="text text-lg font-inter">
-        I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, 
-        don’t hestiate to contact me.
-      </p>
-      <button class="primary-button primary-color font-inter">Get My Resume</button>
-      <hr>
-    </div>
-    <img src="/public/images/illustration-about-me-mobile.png" alt="illustration-about-me">
-    <div class="about-categories-container">
-      <ul class="category-item d-flex text-white font-inter list-none">
-        <li class="category-title text-lg d-flex">
-          <span class="diamond-shape shape-size primary-color"></span>
-          Lanugages
+    </section>
+    <footer class="text-white d-flex bg-contact-color">
+      <ul class="footer-icons d-flex list-none">
+        <li>
+          <a href="#" class="footer-li-a">
+            <i class="fab fa-github icons"></i
+          ></a>
         </li>
-        <li class="category-subtitle">Javascript</li>
-        <li class="category-subtitle">Ruby</li>
-        <li class="category-subtitle">Html</li>
-        <li class="category-subtitle">Css</li>
-      </ul>
-      <ul class="category-item d-flex text-white font-inter list-none">
-        <li class="category-title text-lg d-flex">
-          <span class="shape-size primary-color"></span>
-          Frameworks
+        <li>
+          <a href="#" class="footer-li-a">
+            <i class="fab fa-linkedin-in"></i
+          ></a>
         </li>
-        <li class="category-subtitle">Bootstrap</li>
-        <li class="category-subtitle">Ruby on Rails</li>
-        <li class="category-subtitle">RSPec</li>
-        <li class="category-subtitle">CapyBara</li>
-        <li class="category-subtitle">Selenium</li>
-      </ul>
-      <ul class="category-item d-flex text-white font-inter list-none">
-        <li class="category-title text-lg d-flex">
-          <span class="circle-shape shape-size primary-color"></span>
-          Skills
+        <li>
+          <a href="#" class="footer-li-a"> <i class="fab fa-angellist"></i></a>
         </li>
-        <li class="category-subtitle">Codekit</li>
-        <li class="category-subtitle">Github</li>
-        <li class="category-subtitle">Codepen</li>
-        <li class="category-subtitle">Gitlab</li>
-        <li class="category-subtitle">Terminal</li>
+        <li>
+          <a href="#" class="footer-li-a"> <i class="fab fa-twitter"></i></a>
+        </li>
+        <li>
+          <a href="#" class="footer-li-a"> <i class="fab fa-medium-m"></i></a>
+        </li>
       </ul>
-    </div>
-  </section>
-  <section class="contact-section bg-contact-color">
-    <div class="contact-container d-flex">
-      <h3 class="font-inter font-center contact-para">
-        I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
-      </h3>
-      <form class="contacts-form d-flex" action="https://formspree.io/f/moqypwqr" method="POST">
-      <input class="input input-text outline-none font-inter" type="text" name="name" id="name" maxlength="30" placeholder="Full name" required>
-      <input class="input input-text outline-none font-inter" type="email" name="email" id="email" placeholder="Email address" required>
-      <textarea class="input outline-none area font-inter" name="message" id="message" cols="30" rows="5" maxlength="500" placeholder="Enter text here" required></textarea>
-      <button class="primary-button primary-color color-width" type="submit">Get in touch</button>
-    </form>
-    </div>
-  </section>
-  <footer class="text-white d-flex bg-contact-color">
-    <ul class="footer-icons d-flex list-none">
-      <li><a href="#" class="footer-li-a">
-        <i class="fab fa-github icons"></i></a></li>
-      <li><a href="#" class="footer-li-a">
-        <i class="fab fa-linkedin-in"></i></a></li>
-      <li><a href="#" class="footer-li-a">
-        <i class="fab fa-angellist"></i></a></li>
-      <li><a href="#" class="footer-li-a">
-          <i class="fab fa-twitter"></i></a></li>
-      <li><a href="#" class="footer-li-a">
-          <i class="fab fa-medium-m"></i></a></li>
-    </ul>
-    <div id="black"></div>
-  </footer>
-</body>
+      <div id="black"></div>
+    </footer>
+  </body>
 </html>
