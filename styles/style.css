@@ -190,7 +190,11 @@ header {
   background-color: #e5e5e5;
 }
 
-.works-section > h1 {
+.works-section .ruler {
+  display: none;
+}
+
+.intro > h1 {
   text-align: center;
   font-size: 42px;
   padding-top: 40%;
@@ -279,6 +283,10 @@ header {
 
 .grid-item-card-content .box-container .box > p {
   font-size: 15px;
+}
+
+.desktop-item-card {
+  display: none;
 }
 
 /* About Section styles */
@@ -456,6 +464,7 @@ footer .footer-icons > li {
 
 /* DESKTOP VERSION MEDIA QUERIRES */
 @media (min-width: 800px) {
+  /* header section */
   header {
     padding: 10px 10%;
   }
@@ -474,7 +483,7 @@ footer .footer-icons > li {
 
   .headline-section {
     height: 100vh;
-    margin-bottom: 0;
+    margin-bottom: -1.9%;
     justify-content: space-between;
     background-image: none;
   }
@@ -530,5 +539,103 @@ footer .footer-icons > li {
 
   .mobile-version-icons {
     display: none;
+  }
+
+  /* work section */
+  .works-section {
+    padding: 10px 5%;
+  }
+
+  .works-section .intro > h1 {
+    text-align: center;
+    font-size: 42px;
+    padding-top: 2%;
+  }
+
+  .heading-recent-works {
+    font-size: 40px;
+    padding-top: 2%;
+  }
+
+  .works-section .ruler {
+    width: 75%;
+    height: 4px;
+    margin: 3% 0 0 4%;
+    background-color: #212121;
+    border-radius: 15%;
+    display: block;
+  }
+
+  .works-section > hr {
+    display: none;
+  }
+
+  /* work section multi-post container */
+  .multi-post-container {
+    flex-direction: row;
+    align-items: flex-start !important;
+  }
+
+  .multi-post-container > img {
+    height: auto;
+    width: 55%;
+  }
+
+  .multi-post-content {
+    height: auto;
+    width: 45%;
+    margin-left: 50px;
+  }
+
+  .multi-post-content > h2 {
+    font-size: 40px;
+    line-height: 52px;
+    margin-top: -10px;
+  }
+
+  .multi-post-content > p {
+    width: 80%;
+    margin-top: -6px;
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  /* Grid Section */
+  .grid-container {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    gap: 20px;
+  }
+
+  .grid-item-1 {
+    background-image: url("/public/images/img-placeholder-3.png");
+  }
+
+  .grid-item-2 {
+    background-image: url("/public/images/img-placeholder-4.png");
+  }
+
+  .grid-item-3 {
+    background-image: url("/public/images/img-placeholder-5.png");
+  }
+
+  .grid-item-4 {
+    background-image: url("/public/images/img-placeholder-2.png");
+  }
+
+  .grid-item-5 {
+    background-image: url("/public/images/img-placeholder-4.png");
+  }
+
+  .grid-item-6 {
+    background-image: url("/public/images/img-placeholder-5.png");
+  }
+
+  .mobile-item-card {
+    display: none;
+  }
+
+  .desktop-item-card {
+    display: block;
   }
 }
