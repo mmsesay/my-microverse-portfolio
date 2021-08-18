@@ -128,6 +128,11 @@ header {
   height: 100vh;
   margin-bottom: -11%;
   justify-content: center;
+  background-image: url("../public/images/illustration-header-mobile.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: inherit;
+  background-position-y: 85%;
 }
 
 .sider-icons-menu > ul {
@@ -168,21 +173,6 @@ header {
 
 .headline-text-contents > p {
   font-family: Poppins, sans-serif;
-}
-
-.headline-illustration-container {
-  position: absolute;
-  width: 100%;
-  right: 0;
-  top: 40%;
-  z-index: -1;
-  overflow: hidden;
-}
-
-#headline-illustration {
-  right: -10%;
-  left: 40%;
-  margin-left: 60%;
 }
 
 /* Works section styles */
@@ -473,5 +463,37 @@ footer .footer-icons > li {
 
   #headline-illustration {
     display: none;
+  }
+
+  .headline-section {
+    height: 100vh;
+    margin-bottom: 0;
+    justify-content: space-between;
+    background-image: none;
+    /* align-items: flex-start !important; */
+  }
+
+  .headline-text-contents {
+    margin-top: 0%;
+    width: 50%;
+    background-color: #091e42;
+  }
+
+  .desktop-headline-bg-section {
+    margin-top: 0%;
+    height: 100%;
+    width: 80%;
+    justify-content: flex-end;
+  }
+
+  .desktop-headline-bg-container {
+    margin-top: -17.2%;
+    height: 80%;
+    width: 100%;
+  }
+
+  .desktop-headline-bg {
+    height: 130%;
+    width: 100%;
   }
 }
