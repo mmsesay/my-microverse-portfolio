@@ -64,7 +64,6 @@ body {
 }
 
 .primary-button {
-  width: 100%;
   font-weight: bold;
   text-align: center;
   font-size: 17px;
@@ -72,16 +71,19 @@ body {
   border-radius: 0;
   color: #fff;
   cursor: pointer;
+  width: inherit;
+  display: block;
+  padding: 14px 10px;
 }
 
 .primary-button:hover {
-  font-weight: bold;
-  font-size: 17px;
   border: 1px solid #f55800;
-  border-radius: 0;
   color: #f55800;
   background-color: #fff5e1;
-  cursor: pointer;
+}
+
+.button-sm {
+  width: 120px;
 }
 
 .box {
@@ -189,10 +191,13 @@ header {
   background-color: #e5e5e5;
 }
 
-.intro > h1 {
-  text-align: center;
-  font-size: 42px;
+.works-section .intro {
+  justify-content: center;
+}
+
+.heading-recent-works {
   padding-top: 40%;
+  font-size: 40px;
   color: #1c1a19;
 }
 
@@ -217,11 +222,6 @@ header {
   color: #091e42;
 }
 
-.multi-post-content > button {
-  width: 120px;
-  height: 50px;
-}
-
 .multi-post-content .box {
   color: #091e42;
   background-color: #fff;
@@ -244,6 +244,7 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  cursor: pointer;
 }
 
 .grid-items:last-child {
@@ -254,12 +255,10 @@ header {
   width: 100%;
 }
 
-.grid-item-card > button {
-  height: 50px;
-}
-
 .grid-item-card-content {
   padding: 0 20px;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .grid-item-card-content .box {
@@ -278,6 +277,15 @@ header {
 
 .grid-item-card-content .box-container .box > p {
   font-size: 15px;
+}
+
+/* hide content and show button when hover on the card */
+.grid-item-card:hover > .grid-item-card-content {
+  opacity: 0;
+}
+
+.grid-item-card:hover > .button-container {
+  display: block;
 }
 
 /* About Section styles */
@@ -453,7 +461,7 @@ footer .footer-icons > li {
 }
 
 /* DESKTOP VERSION MEDIA QUERIRES */
-@media (min-width: 800px) {
+@media (min-width: 992px) {
   /* header section */
   header {
     padding: 10px 10%;
@@ -527,12 +535,6 @@ footer .footer-icons > li {
     padding: 10px 5%;
   }
 
-  .works-section .intro > h1 {
-    text-align: center;
-    font-size: 42px;
-    padding-top: 2%;
-  }
-
   .heading-recent-works {
     font-size: 40px;
     padding-top: 2%;
@@ -591,28 +593,18 @@ footer .footer-icons > li {
     background-image: url("/public/images/img-placeholder-3.png");
   }
 
-  .grid-item-2 {
+  .grid-item-2,
+  .grid-item-5 {
     background-image: url("/public/images/img-placeholder-4.png");
   }
 
-  .grid-item-3 {
+  .grid-item-3,
+  .grid-item-6 {
     background-image: url("/public/images/img-placeholder-5.png");
   }
 
   .grid-item-4 {
     background-image: url("/public/images/img-placeholder-2.png");
-  }
-
-  .grid-item-5 {
-    background-image: url("/public/images/img-placeholder-4.png");
-  }
-
-  .grid-item-6 {
-    background-image: url("/public/images/img-placeholder-5.png");
-  }
-
-  .mobile-item-card {
-    display: none;
   }
 
   /* About Section styles */
