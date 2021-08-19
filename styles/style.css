@@ -72,8 +72,9 @@ body {
   color: #fff;
   cursor: pointer;
   width: inherit;
+  padding: 15px 0;
   display: block;
-  padding: 14px 10px;
+  transition: all 1s ease-in-out;
 }
 
 .primary-button:hover {
@@ -279,15 +280,6 @@ header {
   font-size: 15px;
 }
 
-/* hide content and show button when hover on the card */
-.grid-item-card:hover > .grid-item-card-content {
-  opacity: 0;
-}
-
-.grid-item-card:hover > .button-container {
-  display: block;
-}
-
 /* About Section styles */
 .about-section {
   margin-top: -50px;
@@ -468,7 +460,7 @@ footer .footer-icons > li {
   }
 
   .hide-on-large {
-    display: none;
+    opacity: 0;
   }
 
   .show-on-large {
@@ -605,6 +597,26 @@ footer .footer-icons > li {
 
   .grid-item-4 {
     background-image: url("/public/images/img-placeholder-2.png");
+  }
+
+  /* hide content and show button when hover on the card */
+  .grid-item-card > .grid-item-card-content {
+    transition: opacity 1s ease-in-out;
+  }
+
+  .grid-item-card:hover > .grid-item-card-content {
+    opacity: 0;
+  }
+
+  .grid-item-card > .project-btn {
+    opacity: 0;
+    width: 0%;
+    transition: all 1s ease-in-out;
+  }
+
+  .grid-item-card:hover > .project-btn {
+    opacity: 1;
+    width: inherit;
   }
 
   /* About Section styles */
