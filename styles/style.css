@@ -516,10 +516,25 @@ footer .footer-icons > li {
   .sider-menu {
     width: 150px;
     height: 100%;
+    justify-content: center;
+  }
+
+  .sider-menu > ul {
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .sider-menu > ul > li {
     padding: 20px 0;
+    margin: 0 10px 0 -30px;
+  }
+
+  .sider-menu > ul > li a:hover {
+    background-color: #ff6b00;
+    padding: 10px;
+    border-radius: 100%;
+    transition: all 0.5s ease-in-out;
   }
 
   /* work section */
