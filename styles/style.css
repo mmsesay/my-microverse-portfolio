@@ -74,6 +74,7 @@ body {
   width: inherit;
   display: block;
   padding: 14px 10px;
+  transition: all 2s ease-in-out;
 }
 
 .primary-button:hover {
@@ -591,6 +592,16 @@ footer .footer-icons > li {
 
   .grid-item-1 {
     background-image: url("/public/images/img-placeholder-3.png");
+  }
+
+  .grid-item-1:hover,
+  .grid-item-2:hover,
+  .grid-item-5:hover,
+  .grid-item-3:hover,
+  .grid-item-6:hover,
+  .grid-item-4:hover {
+    transform: scale(1.2);
+    transition: all 3s ease-in-out;
   }
 
   .grid-item-2,
