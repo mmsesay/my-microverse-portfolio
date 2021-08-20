@@ -74,6 +74,7 @@ body {
   width: inherit;
   display: block;
   padding: 14px 10px;
+  transition: all 2s ease-in-out;
 }
 
 .primary-button:hover {
@@ -113,6 +114,11 @@ header {
   font-size: 18px;
   justify-content: space-between;
   background-color: #3e3c3c;
+}
+
+.logo {
+  transform: rotate(360deg);
+  transition: all 2s ease-in-out;
 }
 
 .bars > i {
@@ -591,20 +597,33 @@ footer .footer-icons > li {
 
   .grid-item-1 {
     background-image: url("/public/images/img-placeholder-3.png");
+    transition: all 1s ease-in-out;
   }
 
   .grid-item-2,
   .grid-item-5 {
     background-image: url("/public/images/img-placeholder-4.png");
+    transition: all 1s ease-in-out;
   }
 
   .grid-item-3,
   .grid-item-6 {
     background-image: url("/public/images/img-placeholder-5.png");
+    transition: all 1s ease-in-out;
   }
 
   .grid-item-4 {
     background-image: url("/public/images/img-placeholder-2.png");
+    transition: all 1s ease-in-out;
+  }
+
+  .grid-item-1:hover,
+  .grid-item-2:hover,
+  .grid-item-5:hover,
+  .grid-item-3:hover,
+  .grid-item-6:hover,
+  .grid-item-4:hover {
+    transform: scale(1.1);
   }
 
   /* About Section styles */
@@ -674,6 +693,12 @@ footer .footer-icons > li {
     font-weight: 700;
     line-height: 52px;
     text-align: left;
+    transition: all 1s ease-in-out;
+  }
+
+  .contact-para:hover {
+    cursor: pointer;
+    transform: translate(20px, 0);
   }
 
   .contacts-form {
