@@ -116,6 +116,11 @@ header {
   background-color: #3e3c3c;
 }
 
+.logo {
+  transform: rotate(360deg);
+  transition: all 2s ease-in-out;
+}
+
 .bars > i {
   font-size: 20px;
   margin-right: 15px;
@@ -592,6 +597,24 @@ footer .footer-icons > li {
 
   .grid-item-1 {
     background-image: url("/public/images/img-placeholder-3.png");
+    transition: all 1s ease-in-out;
+  }
+
+  .grid-item-2,
+  .grid-item-5 {
+    background-image: url("/public/images/img-placeholder-4.png");
+    transition: all 1s ease-in-out;
+  }
+
+  .grid-item-3,
+  .grid-item-6 {
+    background-image: url("/public/images/img-placeholder-5.png");
+    transition: all 1s ease-in-out;
+  }
+
+  .grid-item-4 {
+    background-image: url("/public/images/img-placeholder-2.png");
+    transition: all 1s ease-in-out;
   }
 
   .grid-item-1:hover,
@@ -600,22 +623,7 @@ footer .footer-icons > li {
   .grid-item-3:hover,
   .grid-item-6:hover,
   .grid-item-4:hover {
-    transform: scale(1.2);
-    transition: all 3s ease-in-out;
-  }
-
-  .grid-item-2,
-  .grid-item-5 {
-    background-image: url("/public/images/img-placeholder-4.png");
-  }
-
-  .grid-item-3,
-  .grid-item-6 {
-    background-image: url("/public/images/img-placeholder-5.png");
-  }
-
-  .grid-item-4 {
-    background-image: url("/public/images/img-placeholder-2.png");
+    transform: scale(1.1);
   }
 
   /* About Section styles */
@@ -685,6 +693,12 @@ footer .footer-icons > li {
     font-weight: 700;
     line-height: 52px;
     text-align: left;
+    transition: all 1s ease-in-out;
+  }
+
+  .contact-para:hover {
+    cursor: pointer;
+    transform: translate(20px, 0);
   }
 
   .contacts-form {
