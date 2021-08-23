@@ -140,7 +140,7 @@ header {
   height: 100vh;
   margin-bottom: -11%;
   justify-content: center;
-  background-image: url("../public/images/illustration-header-mobile.png");
+  background-image: url("/public/images/illustration-header-mobile.png");
   background-repeat: no-repeat;
   background-position: right;
   background-size: inherit;
