@@ -19,6 +19,9 @@ Categories                                        |  Contact Form
 
 - HTML & CSS
 
+## Link to project online
+- [OnlineVersion](https://mmsesay.github.io/my-microverse-portfolio/)
+
 ## Authors
 
 👤 **Author1**
@@ -26,12 +29,6 @@ Categories                                        |  Contact Form
 - GitHub: [@mmsesay](https://github.com/mmsesay)
 - Twitter: [@DeeMaejor](https://twitter.com/DeeMaejor)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/muhammad-m-sesay)
-
-👤 **Author2**
-
-- GitHub: [@1GORDON](https://github.com/1GORDON)
-- Twitter: [@GTinyefuza](https://twitter.com/Tinyefuza)
-- LinkedIn: [LinkedIn](www.linkedin.com/in/tinyefuza-gordon-935747213 )
 
 ## 🤝 Contributing
 
