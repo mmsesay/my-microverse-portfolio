@@ -140,7 +140,7 @@ header {
   height: 100vh;
   margin-bottom: -11%;
   justify-content: center;
-  background-image: url("../public/images/illustration-header-mobile.png");
+  background-image: url("./public/images/illustration-header-mobile.png");
   background-repeat: no-repeat;
   background-position: right;
   background-size: inherit;
@@ -246,7 +246,7 @@ header {
 .grid-items {
   height: 500px;
   align-items: flex-end;
-  background-image: url("../public/images/img-placeholder-2.png");
+  background-image: url("./public/images/img-placeholder-2.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -602,24 +602,24 @@ footer .footer-icons > li {
   }
 
   .grid-item-1 {
-    background-image: url("../public/images/img-placeholder-3.png");
+    background-image: url("./public/images/img-placeholder-3.png");
     transition: all 1s ease-in-out;
   }
 
   .grid-item-2,
   .grid-item-5 {
-    background-image: url("../public/images/img-placeholder-4.png");
+    background-image: url("./public/images/img-placeholder-4.png");
     transition: all 1s ease-in-out;
   }
 
   .grid-item-3,
   .grid-item-6 {
-    background-image: url("../public/images/img-placeholder-5.png");
+    background-image: url("./public/images/img-placeholder-5.png");
     transition: all 1s ease-in-out;
   }
 
   .grid-item-4 {
-    background-image: url("../public/images/img-placeholder-2.png");
+    background-image: url("./public/images/img-placeholder-2.png");
     transition: all 1s ease-in-out;
   }
 
