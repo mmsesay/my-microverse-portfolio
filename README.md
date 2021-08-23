@@ -19,6 +19,9 @@ Categories                                        |  Contact Form
 
 - HTML & CSS
 
+## Link to project online
+- [OnlineVersion](https://mmsesay.github.io/my-microverse-portfolio/)
+
 ## Authors
 
 👤 **Author1**
