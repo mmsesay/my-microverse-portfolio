@@ -27,12 +27,6 @@ Categories                                        |  Contact Form
 - Twitter: [@DeeMaejor](https://twitter.com/DeeMaejor)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/muhammad-m-sesay)
 
-👤 **Author2**
-
-- GitHub: [@1GORDON](https://github.com/1GORDON)
-- Twitter: [@GTinyefuza](https://twitter.com/Tinyefuza)
-- LinkedIn: [LinkedIn](www.linkedin.com/in/tinyefuza-gordon-935747213 )
-
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
