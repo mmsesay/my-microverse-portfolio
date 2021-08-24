@@ -48,7 +48,7 @@
           <li><a href="#" class="text-white no-underline">Portfolio</a></li>
           <li><a href="#" class="text-white no-underline">About</a></li>
           <li><a href="#" class="text-white no-underline">Contact</a></li>
-          <li><a href="#" class="text-white no-underline"><i class="far fa-envelope"></i></a></li>
+          <li><a href="#" aria-label="envelope" class="text-white no-underline"><i class="far fa-envelope"></i></a></li>
         </ul>
         <span class="bars hide-on-large">
           <i class="fas fa-bars"></i>
@@ -92,7 +92,7 @@
         <h1 class="font-crete-round text-xl primary-text">
           Hey There. <br />I&apos;m Muhammad
         </h1>
-        <h5>I am a Software Developer</h5>
+        <h2>I am a Software Developer</h2>
         <p class="text-lg">
           I can help you build a product , feature or website Look through some
           of my work and experience! If you like what you see and have a project
@@ -123,7 +123,7 @@
           <img
             class="desktop-headline-bg"
             src="./public/images/Illustration-header@2x.png"
-            alt="background-illustration-image"
+            alt="background-illustration"
           />
         </div>
       </div>
@@ -139,7 +139,7 @@
       <div class="multi-post-container d-flex">
         <img
           src="./public/images/img-placeholder-1.png"
-          alt="feature-post-image"
+          alt="feature-post"
         />
         <div class="multi-post-content">
           <h2 class="font-crete-round">Multi-Post Stories</h2>
@@ -161,7 +161,7 @@
             class="font-inter text-white no-underline primary-button primary-color"
             target="_blank"
             rel="noopener noreferrer"
-            href="https://github.com/mmsesay/my-microverse-portfolio"
+            href="#"
             >See Project</a>
           </div>
         </div>
@@ -188,7 +188,7 @@
               class="font-inter text-white no-underline primary-button primary-color btn"
               target="_blank"
               rel="noopener noreferrer"
-              href="https://github.com/mmsesay/my-microverse-portfolio"
+              href="#"
               >See Project</a>
             </div>
           </div>
@@ -217,7 +217,7 @@
               class="font-inter text-white no-underline primary-button primary-color project-btn hide-on-large"
               target="_blank"
               rel="noopener noreferrer"
-              href="https://github.com/mmsesay/my-microverse-portfolio"
+              href="#"
               >See Project</a>
           </div>
         </div>
@@ -242,7 +242,7 @@
               class="font-inter text-white no-underline primary-button primary-color project-btn hide-on-large"
               target="_blank"
               rel="noopener noreferrer"
-              href="https://github.com/mmsesay/my-microverse-portfolio"
+              href="#"
               >See Project</a>
           </div>
         </div>
@@ -270,7 +270,7 @@
             class="font-inter text-white no-underline primary-button primary-color project-btn hide-on-large"
             target="_blank"
             rel="noopener noreferrer"
-            href="https://github.com/mmsesay/my-microverse-portfolio"
+            href="#"
             >See Project</a>
           </div>
         </div>
@@ -298,7 +298,7 @@
               class="font-inter text-white no-underline primary-button primary-color project-btn hide-on-large"
               target="_blank"
               rel="noopener noreferrer"
-              href="https://github.com/mmsesay/my-microverse-portfolio"
+              href="#"
             >See Project</a>
           </div>
         </div>
@@ -398,15 +398,16 @@
     </section>
     <section class="contact-section bg-contact-color">
       <div class="contact-container d-flex">
-        <h3 class="font-inter font-center contact-para">
+        <h2 class="font-inter font-center contact-para">
           I'm always interested in hearing about new projects, so if you'd like
           to chat please get in touch.
-        </h3>
+        </h2>
         <form
           class="contacts-form d-flex"
           action="https://formspree.io/f/moqypwqr"
           method="POST"
         >
+        <label for="name">name:</label>
           <input
             class="input input-text outline-none font-inter"
             type="text"
@@ -416,6 +417,7 @@
             placeholder="Full name"
             required
           />
+            <label for="email">Email:</label>
           <input
             class="input input-text outline-none font-inter"
             type="email"
@@ -424,6 +426,7 @@
             placeholder="Email address"
             required
           />
+          <label for="message">message:</label>
           <textarea
             class="input outline-none area font-inter"
             name="message"
