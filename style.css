@@ -69,7 +69,7 @@ body {
   font-size: 17px;
   border: none;
   border-radius: 0;
-  color: #fff;
+  color: #050505;
   cursor: pointer;
   width: inherit;
   padding: 15px 0;
@@ -177,7 +177,7 @@ header {
   z-index: 20;
 }
 
-.headline-text-contents > h5 {
+.headline-text-contents > h2 {
   font-family: Roboto, sans-serif;
   margin-top: -20px;
   font-weight: 500;
@@ -274,6 +274,7 @@ header {
 
 .grid-item-card-content > h2 {
   font-size: 33px;
+  color: #424242;
 }
 
 .grid-item-card-content > p {
@@ -370,6 +371,10 @@ header {
   height: auto;
   width: auto;
   overflow-x: hidden;
+}
+
+label {
+  display: none;
 }
 
 .contact-container {
@@ -489,7 +494,7 @@ footer .footer-icons > li {
     line-height: 81.5px;
   }
 
-  .headline-text-contents > h5 {
+  .headline-text-contents > h2 {
     font-size: 32px;
     line-height: 44px;
   }
