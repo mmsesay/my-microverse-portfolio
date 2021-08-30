@@ -492,6 +492,10 @@ footer .footer-icons > li {
   color: #fff5e1;
 }
 
+#times {
+  display: none;
+}
+
 /* DESKTOP VERSION MEDIA QUERIRES */
 @media (min-width: 992px) {
   /* header section */
