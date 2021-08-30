@@ -1,21 +1,28 @@
 // index.js
-let mobileMenu = document.getElementById('mobile-menu');
-let body = document.querySelector('body');
-let openButton = document.getElementById('hamburgerButton');
-let closeButton = document.getElementById('times');
+const mobileMenu = document.getElementById('mobile-menu');
+const body = document.querySelector('body');
+const openButton = document.getElementById('hamburgerButton');
+const closeButton = document.getElementById('times');
 
 // hides elements
 function hide(args) {
   args.forEach((arg) => {
-    arg.style.display = "none";
-  })
+    arg.style.display = 'none';
+  });
 }
 
 // show elements
 function show(args) {
   args.forEach((arg) => {
-    arg.style.display = "block";
-  })
+    arg.style.display = 'block';
+  });
+}
+
+// toggle body scrolling
+function toggleScroll(state) {
+  // param state: is a boolean
+  if(state) body.style.overflow = 'hidden'
+  else body.style.overflow = 'scroll';
 }
 
 function closeMobileMenu() {
@@ -28,12 +35,6 @@ function openMobileMenu() {
   hide([openButton]);
   show([mobileMenu, closeButton]);
   toggleScroll(true); // makes the body non-scrollable
-}
-
-// toggle body scrolling
-function toggleScroll(state) {
-  // param state: is a boolean
-  state? `${body.style.overflow = 'hidden'}`: `${body.style.overflow = 'scroll'}`;
 }
 
 // target all mobile menu options
