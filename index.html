@@ -1,17 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QFNS01QLGM"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-QFNS01QLGM');
-    </script>
-    
-    <!-- Other import -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -38,11 +27,24 @@
       href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QFNS01QLGM"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-QFNS01QLGM');
+    </script>
+    
+    <!-- Other import -->
     <title>My Portfolio</title>
   </head>
   <body>
     <header class="d-flex font-inter">
       <a href="#" class="text-white no-underline logo">Muhammad</a>
+      <!-- desktop menu -->
       <nav class="d-flex space-x">
         <ul class="d-flex space-x hide-on-small show-on-large list-none">
           <li><a href="#" class="text-white no-underline">Portfolio</a></li>
@@ -51,10 +53,23 @@
           <li><a href="#" aria-label="envelope" class="text-white no-underline"><i class="far fa-envelope"></i></a></li>
         </ul>
         <span class="bars hide-on-large">
-          <i class="fas fa-bars"></i>
+          <i class="fas fa-bars cursor-pointer" id="hamburgerButton"></i>
+          <i class="fas fa-times cursor-pointer" id="times"></i>
         </span>
       </nav>
     </header>
+
+    <!-- mobile menu -->
+    <div id="mobile-menu">
+      <nav class="font-inter">
+        <ul class="list-none">
+          <li class="mobileMenuOption cursor-pointer"><a href="#portfolio" class="text-white no-underline">Portfolio</a></li>
+          <li class="mobileMenuOption cursor-pointer"><a href="#about" class="text-white no-underline">About</a></li>
+          <li class="mobileMenuOption cursor-pointer"><a href="#contact" class="text-white no-underline">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
     <section class="headline-section d-flex secondary-color">
       <div
         class="
@@ -128,7 +143,7 @@
         </div>
       </div>
     </section>
-    <section class="works-section">
+    <section class="works-section" id="portfolio">
       <div class="d-flex intro">
         <h1 class="font-crete-round text-xl heading-recent-works">
           My Recent Works
@@ -329,7 +344,7 @@
         </div>
       </div>
     </section>
-    <section class="about-section secondary-color">
+    <section class="about-section secondary-color" id="about">
       <div class="about-section-content">
         <h1 class="font-crete-round primary-text">About me</h1>
         <p class="text text-lg font-inter">
@@ -337,7 +352,7 @@
           of my work and experience! If you like what you see and have a project
           you need coded, don’t hestiate to contact me.
         </p>
-        <button class="primary-button primary-color font-inter">
+        <button type="button" class="primary-button primary-color font-inter">
           Get My Resume
         </button>
         <hr />
@@ -396,7 +411,7 @@
         </ul>
       </div>
     </section>
-    <section class="contact-section bg-contact-color">
+    <section class="contact-section bg-contact-color" id="contact">
       <div class="contact-container d-flex">
         <h2 class="font-inter font-center contact-para">
           I'm always interested in hearing about new projects, so if you'd like
@@ -470,5 +485,7 @@
       </ul>
       <div class="small-divider hide-on-large show-on-small"></div>
     </footer>
+
+  <script src="index.js"></script>
   </body>
 </html>

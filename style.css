@@ -462,6 +462,44 @@ footer .footer-icons > li {
   height: 5px;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
+/* mobile menu */
+#mobile-menu {
+  background-color: #3c3a39;
+  height: 100vh;
+  margin-top: -17px;
+  display: none;
+}
+
+#mobile-menu > nav {
+  margin-left: -20px;
+}
+
+#mobile-menu > nav > ul {
+  padding-top: 40px;
+  margin: 0 20px;
+}
+
+#mobile-menu > nav > ul > li {
+  padding: 10px 0;
+  border-bottom: 1px solid #f7f7f9;
+}
+
+#mobile-menu > nav > ul > li > a {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff5e1;
+}
+
+#times {
+  display: none;
+}
+
 /* DESKTOP VERSION MEDIA QUERIRES */
 @media (min-width: 992px) {
   /* header section */
