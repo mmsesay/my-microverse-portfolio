@@ -1,6 +1,6 @@
 // index.js
-let body = document.querySelector('body');
 let mobileMenu = document.getElementById('mobile-menu');
+let body = document.querySelector('body');
 let openButton = document.getElementById('hamburgerButton');
 let closeButton = document.getElementById('times');
 
@@ -38,7 +38,7 @@ function toggleScroll(state) {
 
 // target all mobile menu options
 document.querySelectorAll('.mobileMenuOption').forEach((item) => {
-  item.addEventListener('click', closeMobileMenu);
+  item.addEventListener('click', closeMobileMenu());
 });
 
 // open button event listener
