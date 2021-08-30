@@ -32,7 +32,7 @@ function openMobileMenu() {
 
 // target all mobile menu options
 document.querySelectorAll('.mobileMenuOption').forEach((item) => {
-  item.addEventListener('click', closeMobileMenu());
+  item.addEventListener('click', closeMobileMenu);
 });
 
 // open button event listener
