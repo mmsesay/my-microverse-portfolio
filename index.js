@@ -18,23 +18,16 @@ function show(args) {
   });
 }
 
-// toggle body scrolling
-function toggleScroll(state) {
-  // param state: is a boolean
-  if(state) body.style.overflow = 'hidden'
-  else body.style.overflow = 'scroll';
-}
-
 function closeMobileMenu() {
   hide([mobileMenu, closeButton]);
   show([openButton]);
-  toggleScroll(false); // makes the body to scroll
+  body.style.overflow = 'scroll';
 }
 
 function openMobileMenu() {
   hide([openButton]);
   show([mobileMenu, closeButton]);
-  toggleScroll(true); // makes the body non-scrollable
+  body.style.overflow = 'hidden';
 }
 
 // target all mobile menu options
