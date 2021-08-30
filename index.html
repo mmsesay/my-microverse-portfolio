@@ -38,11 +38,13 @@
       href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
       rel="stylesheet"
     />
+    <script src="./index.js"></script>
     <title>My Portfolio</title>
   </head>
   <body>
     <header class="d-flex font-inter">
       <a href="#" class="text-white no-underline logo">Muhammad</a>
+      <!-- desktop menu -->
       <nav class="d-flex space-x">
         <ul class="d-flex space-x hide-on-small show-on-large list-none">
           <li><a href="#" class="text-white no-underline">Portfolio</a></li>
@@ -50,11 +52,23 @@
           <li><a href="#" class="text-white no-underline">Contact</a></li>
           <li><a href="#" aria-label="envelope" class="text-white no-underline"><i class="far fa-envelope"></i></a></li>
         </ul>
-        <span class="bars hide-on-large">
+        <span id="hamburgerButton" class="bars hide-on-large" onclick="toggleMobileMenu()">
           <i class="fas fa-bars"></i>
         </span>
       </nav>
     </header>
+
+    <!-- mobile menu -->
+    <div id="mobile-menu">
+      <nav class="font-inter">
+        <ul class="list-none">
+          <li><a href="#" class="text-white no-underline">Portfolio</a></li>
+          <li><a href="#" class="text-white no-underline">About</a></li>
+          <li><a href="#" class="text-white no-underline">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
     <section class="headline-section d-flex secondary-color">
       <div
         class="
