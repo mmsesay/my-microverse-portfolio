@@ -462,6 +462,10 @@ footer .footer-icons > li {
   height: 5px;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 /* mobile menu */
 #mobile-menu {
   background-color: #3c3a39;

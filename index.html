@@ -1,17 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QFNS01QLGM"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-QFNS01QLGM');
-    </script>
-    
-    <!-- Other import -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -38,6 +27,18 @@
       href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QFNS01QLGM"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-QFNS01QLGM');
+    </script>
+    
+    <!-- Other import -->
     <title>My Portfolio</title>
   </head>
   <body>
@@ -52,8 +53,8 @@
           <li><a href="#" aria-label="envelope" class="text-white no-underline"><i class="far fa-envelope"></i></a></li>
         </ul>
         <span class="bars hide-on-large">
-          <i class="fas fa-bars" id="hamburgerButton"></i>
-          <i class="fas fa-times" id="times"></i>
+          <i class="fas fa-bars cursor-pointer" id="hamburgerButton"></i>
+          <i class="fas fa-times cursor-pointer" id="times"></i>
         </span>
       </nav>
     </header>
@@ -62,9 +63,9 @@
     <div id="mobile-menu">
       <nav class="font-inter">
         <ul class="list-none">
-          <li class="mobileMenuOption"><a href="#portfolio" class="text-white no-underline">Portfolio</a></li>
-          <li class="mobileMenuOption"><a href="#about" class="text-white no-underline">About</a></li>
-          <li class="mobileMenuOption"><a href="#contact" class="text-white no-underline">Contact</a></li>
+          <li class="mobileMenuOption cursor-pointer"><a href="#portfolio" class="text-white no-underline">Portfolio</a></li>
+          <li class="mobileMenuOption cursor-pointer"><a href="#about" class="text-white no-underline">About</a></li>
+          <li class="mobileMenuOption cursor-pointer"><a href="#contact" class="text-white no-underline">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -351,7 +352,7 @@
           of my work and experience! If you like what you see and have a project
           you need coded, don’t hestiate to contact me.
         </p>
-        <button class="primary-button primary-color font-inter">
+        <button type="button" class="primary-button primary-color font-inter">
           Get My Resume
         </button>
         <hr />
@@ -484,6 +485,7 @@
       </ul>
       <div class="small-divider hide-on-large show-on-small"></div>
     </footer>
-  </body>
+
   <script src="index.js"></script>
+  </body>
 </html>
