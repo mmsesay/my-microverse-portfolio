@@ -38,7 +38,6 @@
       href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
       rel="stylesheet"
     />
-    <script src="./index.js"></script>
     <title>My Portfolio</title>
   </head>
   <body>
@@ -53,7 +52,7 @@
           <li><a href="#" aria-label="envelope" class="text-white no-underline"><i class="far fa-envelope"></i></a></li>
         </ul>
         <span class="bars hide-on-large">
-          <i class="fas fa-bars" id="hamburgerButton" onclick="toggleMobileMenu()"></i>
+          <i class="fas fa-bars" id="hamburgerButton"></i>
           <i class="fas fa-times" id="times" onclick="toggleMobileMenu()"></i>
         </span>
       </nav>
@@ -63,9 +62,9 @@
     <div id="mobile-menu">
       <nav class="font-inter">
         <ul class="list-none">
-          <li><a href="#" class="text-white no-underline">Portfolio</a></li>
-          <li><a href="#" class="text-white no-underline">About</a></li>
-          <li><a href="#" class="text-white no-underline">Contact</a></li>
+          <li class="mobileMenuOption"><a href="#" class="text-white no-underline">Portfolio</a></li>
+          <li class="mobileMenuOption"><a href="#" class="text-white no-underline">About</a></li>
+          <li class="mobileMenuOption"><a href="#" class="text-white no-underline">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -486,4 +485,5 @@
       <div class="small-divider hide-on-large show-on-small"></div>
     </footer>
   </body>
+  <script src="index.js"></script>
 </html>
