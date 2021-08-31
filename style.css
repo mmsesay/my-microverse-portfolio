@@ -145,6 +145,7 @@ header {
   background-position: right;
   background-size: inherit;
   background-position-y: 85%;
+  position: relative;
   z-index: -1;
 }
 
@@ -503,18 +504,20 @@ footer .footer-icons > li {
 
 /* Popup window */
 .popup-container {
-  background-color: red;
+  background-color: rgba(46, 46, 45, 0.17);
+  padding: 50px 0;
   height: auto;
   display: none;
   top: 0%;
-  z-index: 2;
+  position: fixed;
+  z-index: 3;
 }
 
 .popup-window {
   background-color: #fff;
-  height: 105vh;
+  height: 100%;
   display: flex;
-  margin: 5px 20px;
+  margin: -40px 30px 5px 20px;
   flex-direction: column;
   align-items: center;
 }
@@ -535,15 +538,14 @@ footer .footer-icons > li {
 
 .popup-widow-image-container {
   height: 180px;
-  width: 100%;
+  width: 95%;
   margin-top: -20px;
-  background-color: blue;
 }
 
 .popup-widow-image-container > img {
-  height: 190px;
+  height: inherit;
   width: inherit;
-  object-fit: fill;
+  margin: 0 5px 0 10px;
 }
 
 .popup-para {
@@ -554,11 +556,12 @@ footer .footer-icons > li {
 }
 
 #popup-window-buttons > div {
-  padding: 0 20px;
+  padding: 0 10px;
+  margin: 0 0 10px 0;
 }
 
 #popup-window-buttons > div .links {
-  padding: 10px 5px;
+  padding: 5px 5px;
 }
 
 #live-demo-icon {
