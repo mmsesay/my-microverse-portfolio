@@ -4,7 +4,6 @@ const body = document.querySelector('body');
 const openButton = document.getElementById('hamburgerButton');
 const closeButton = document.getElementById('times');
 const popupContainer = document.querySelector('.popup-container');
-const openPopupBtn = document.getElementById('openPopupWindow');
 const projectsContainer = document.querySelector('.grid-container');
 const closePopupIcon = document.getElementById('closePopupIcon');
 
@@ -66,7 +65,7 @@ closePopupIcon.addEventListener('click', closePopupWindow);
 const workProjects = [
   {
     title: 'Profesional Art Printing Data',
-    description: `A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard`,
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
     image: {
       imageUrl: './img/wesing.png',
       imageAlt: 'Mobile Snapshot',
@@ -77,7 +76,51 @@ const workProjects = [
   },
   {
     title: 'Profesional Art Printing Data',
-    description: `A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard`,
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
+    image: {
+      imageUrl: './img/todo.png',
+      imageAlt: 'ToDo List',
+    },
+    technologies: ['html', 'bootstrap', 'Ruby'],
+    seeLive: 'https://mmsesay.github.io/my-microverse-portfolio/',
+    sourceUrl: 'https://github.com/mmsesay/my-microverse-portfolio',
+  },
+  {
+    title: 'Profesional Art Printing Data',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
+    image: {
+      imageUrl: './img/todo.png',
+      imageAlt: 'ToDo List',
+    },
+    technologies: ['html', 'bootstrap', 'Ruby'],
+    seeLive: 'https://mmsesay.github.io/my-microverse-portfolio/',
+    sourceUrl: 'https://github.com/mmsesay/my-microverse-portfolio',
+  },
+  {
+    title: 'Profesional Art Printing Data',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
+    image: {
+      imageUrl: './img/todo.png',
+      imageAlt: 'ToDo List',
+    },
+    technologies: ['html', 'bootstrap', 'Ruby'],
+    seeLive: 'https://mmsesay.github.io/my-microverse-portfolio/',
+    sourceUrl: 'https://github.com/mmsesay/my-microverse-portfolio',
+  },
+  {
+    title: 'Profesional Art Printing Data',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
+    image: {
+      imageUrl: './img/todo.png',
+      imageAlt: 'ToDo List',
+    },
+    technologies: ['html', 'bootstrap', 'Ruby'],
+    seeLive: 'https://mmsesay.github.io/my-microverse-portfolio/',
+    sourceUrl: 'https://github.com/mmsesay/my-microverse-portfolio',
+  },
+  {
+    title: 'Profesional Art Printing Data',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
     image: {
       imageUrl: './img/todo.png',
       imageAlt: 'ToDo List',
@@ -100,7 +143,7 @@ workProjects.forEach((project) => {
           <div class="box-container d-flex">
             <ul class="d-flex font-inter list-none">`;
   project.technologies.forEach((tech) => {
-    projectHTML += `<li class="box">${tech}</li>`
+    projectHTML += `<li class="box">${tech}</li>`;
   });
   projectHTML += `</ul>
           </div>
@@ -112,7 +155,7 @@ workProjects.forEach((project) => {
           >See Project</a>
         </div>
       </div>
-    </div>`
+    </div>`;
 });
 
 projectsContainer.innerHTML = projectHTML;
