@@ -148,9 +148,9 @@ workProjects.forEach((project) => {
   projectHTML += `</ul>
           </div>
         </div>
-        <div class="button-container">
+        <div class="button-container openPopupWindow">
           <a
-          class="font-inter text-white no-underline primary-button primary-color btn openPopupWindow"
+          class="font-inter text-white no-underline primary-button primary-color btn"
           rel="noopener noreferrer"
           >See Project</a>
         </div>
