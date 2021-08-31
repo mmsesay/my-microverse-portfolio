@@ -3,6 +3,8 @@ const mobileMenu = document.getElementById('mobile-menu');
 const body = document.querySelector('body');
 const openButton = document.getElementById('hamburgerButton');
 const closeButton = document.getElementById('times');
+const popupContainer = document.querySelector('.popup-container');
+const openPopupBtn = document.getElementById('openPopupWindow');
 
 // hides elements
 function hide(args) {
@@ -30,9 +32,19 @@ function openMobileMenu() {
   body.style.overflow = 'hidden';
 }
 
+function openPopupWindow() {
+  show([popupContainer]);
+  // body.style.overflow = 'hidden';
+}
+
 // target all mobile menu options
 document.querySelectorAll('.mobileMenuOption').forEach((item) => {
   item.addEventListener('click', closeMobileMenu);
+});
+
+// target all buttons of projects
+document.querySelectorAll('.openPopupWindow').forEach((item) => {
+  item.addEventListener('click', openPopupWindow);
 });
 
 // open button event listener
