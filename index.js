@@ -5,7 +5,7 @@ const openButton = document.getElementById('hamburgerButton');
 const closeButton = document.getElementById('times');
 const popupContainer = document.querySelector('.popup-container');
 const openPopupBtn = document.getElementById('openPopupWindow');
-const projectsContainer =  document.querySelector('.grid-container');
+const projectsContainer = document.querySelector('.grid-container');
 const closePopupIcon = document.getElementById('closePopupIcon');
 
 // hides elements
@@ -60,6 +60,7 @@ openButton.addEventListener('click', openMobileMenu);
 // close button event listener
 closeButton.addEventListener('click', closeMobileMenu);
 
+closePopupIcon.addEventListener('click', closePopupWindow);
 
 // Projects Dynamic data
 const workProjects = [
@@ -84,12 +85,12 @@ const workProjects = [
     technologies: ['html', 'bootstrap', 'Ruby'],
     seeLive: 'https://mmsesay.github.io/my-microverse-portfolio/',
     sourceUrl: 'https://github.com/mmsesay/my-microverse-portfolio',
-  }
+  },
 ];
 
 let projectHTML = '';
 
-workProjects.forEach((project, index) => {  
+workProjects.forEach((project) => {
   projectHTML += `
     <div class="grid-items d-flex grid-item-1">
       <div class="grid-item-card text-white">
@@ -98,9 +99,9 @@ workProjects.forEach((project, index) => {
           <p class="font-inter">${project.description}</p>
           <div class="box-container d-flex">
             <ul class="d-flex font-inter list-none">`;
-            project.technologies.forEach(tech => {
-              projectHTML += `<li class="box">${tech}</li>`
-            });
+  project.technologies.forEach((tech) => {
+    projectHTML += `<li class="box">${tech}</li>`
+  });
   projectHTML += `</ul>
           </div>
         </div>
@@ -115,4 +116,3 @@ workProjects.forEach((project, index) => {
 });
 
 projectsContainer.innerHTML = projectHTML;
-
