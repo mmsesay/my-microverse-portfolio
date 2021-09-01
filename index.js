@@ -40,3 +40,15 @@ openButton.addEventListener('click', openMobileMenu);
 
 // close button event listener
 closeButton.addEventListener('click', closeMobileMenu);
+
+// Contact Form Validation
+const form = document.querySelector('form');
+const error = document.querySelector('.error-message');
+
+form.addEventListener('submit', (e) => {
+  if (email.value !== email.value.toLowerCase()) {
+    e.preventDefault();
+    error.style.display = 'block';
+    error.textContent = 'Please change your email to lowercase';
+  }
+});
