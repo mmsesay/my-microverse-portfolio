@@ -200,7 +200,7 @@ function popupWindow() {
 function closePopupWindow() {
   hide([popupContainer]);
   body.style.overflow = 'scroll';
-  blurElements([headlineSection, portfolioSection, aboutSection, contactSection], false,);
+  blurElements([headlineSection, portfolioSection, aboutSection, contactSection], false);
 }
 
 // close the popup modal
@@ -210,6 +210,6 @@ closePopupButton.addEventListener('click', closePopupWindow);
 document.querySelectorAll('.openPopupWindow').forEach((item) => {
   item.addEventListener('click', () => {
     popupWindow();
-    blurElements([headlineSection, portfolioSection, aboutSection, contactSection], true,);
+    blurElements([headlineSection, portfolioSection, aboutSection, contactSection], true);
   });
 });
