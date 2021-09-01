@@ -9,7 +9,7 @@ const headlineSection = document.querySelector('.headline-section');
 const portfolioSection = document.getElementById('portfolio');
 const aboutSection = document.getElementById('bout');
 const contactSection = document.getElementById('contact');
-const closePopupButton= document.getElementById('closePopupIcon');
+const closePopupButton = document.getElementById('closePopupIcon');
 const windowWidth = window.innerWidth;
 
 // hides elements
@@ -119,7 +119,7 @@ const workProjects = [
     },
     technologies: ['html', 'bootstrap', 'Ruby'],
     seeLive: 'https://mmsesay.github.io/my-microverse-portfolio',
-    sourceUrl: 'https://github.com/mmsesay/my-microverse-portfolio'
+    sourceUrl: 'https://github.com/mmsesay/my-microverse-portfolio',
   },
   {
     title: 'Profesional Art Printing Data',
@@ -150,7 +150,7 @@ const workProjects = [
     technologies: ['html', 'bootstrap', 'Ruby'],
     seeLive: 'https://mmsesay.github.io/my-microverse-portfolio',
     sourceUrl: 'https://github.com/mmsesay/my-microverse-portfolio',
-  }
+  },
 ];
 
 // variable to hold the injected html projects
@@ -162,7 +162,7 @@ workProjects.forEach((project, index) => {
     <div class="grid-items d-flex grid-item-${(index += 1)}">
       <div class="grid-item-card text-white">`;
   projectHTML += `<div class="grid-item-card-content d-flex ${
-    windowWidth >= 992 && index === 1 ? "hide-on-large" : "show-on-small"
+    windowWidth >= 992 && index === 1 ? 'hide-on-large' : 'show-on-small'
   }">
           <h2 class="font-crete-round hide-on-large">${project.title}</h2>
           <h2 class="font-crete-round show-on-large hide-on-small">
@@ -201,19 +201,17 @@ function closePopupWindow() {
   hide([popupContainer]);
   body.style.overflow = 'scroll';
   blurElements(
-    [headlineSection, portfolioSection, aboutSection, contactSection],
-    false
+    [headlineSection, portfolioSection, aboutSection, contactSection], false,
   );
 }
 
 // close the popup modal
 closePopupButton.addEventListener('click', closePopupWindow);
 
-
 // iterate through the items and listen for popupwindow click
 document.querySelectorAll('.openPopupWindow').forEach((item) => {
-  item.addEventListener("click", () => {
+  item.addEventListener('click', () => {
     popupWindow(),
-    blurElements([headlineSection, portfolioSection, aboutSection, contactSection],true);
+    blurElements([headlineSection, portfolioSection, aboutSection, contactSection], true,);
   });
 });
