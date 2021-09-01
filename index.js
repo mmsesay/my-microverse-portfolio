@@ -17,17 +17,17 @@ const hide = (args) => {
   args.forEach((arg) => {
     arg.style.display = 'none';
   });
-}
+};
 
 // show elements
 const show = (args) => {
   args.forEach((arg) => {
     arg.style.display = 'flex';
   });
-}
+};
 
 // blur elements
-const blurElements= (args, state) => {
+const blurElements = (args, state) => {
   args.forEach((element) => {
     if (state) {
       element.style.filter = 'blur(3px)';
@@ -35,19 +35,19 @@ const blurElements= (args, state) => {
       element.style.filter = 'blur(0px)';
     }
   });
-}
+};
 
 const closeMobileMenu = () => {
   hide([mobileMenu, closeButton]);
   show([openButton]);
   body.style.overflow = 'scroll';
-}
+};
 
 const openMobileMenu = () => {
   hide([openButton]);
   show([mobileMenu, closeButton]);
   body.style.overflow = 'hidden';
-}
+};
 
 // target all mobile menu options
 document.querySelectorAll('.mobileMenuOption').forEach((item) => {
@@ -192,16 +192,16 @@ workProjects.forEach((project, index) => {
 // project container
 projectsContainer.innerHTML = projectHTML;
 
-const popupWindow =() => {
+const popupWindow = () => {
   show([popupContainer]);
   // body.style.overflow = 'hidden';
-}
+};
 
 const closePopupWindow = () => {
   hide([popupContainer]);
   body.style.overflow = 'scroll';
   blurElements([headlineSection, portfolioSection, aboutSection, contactSection], false);
-}
+};
 
 // close the popup modal
 closePopupButton.addEventListener('click', closePopupWindow);
