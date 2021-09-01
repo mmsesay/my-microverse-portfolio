@@ -17,7 +17,7 @@ function hide(args) {
 // show elements
 function show(args) {
   args.forEach((arg) => {
-    arg.style.display = 'block';
+    arg.style.display = 'flex';
   });
 }
 
@@ -46,11 +46,6 @@ function closePopupWindow() {
 // target all mobile menu options
 document.querySelectorAll('.mobileMenuOption').forEach((item) => {
   item.addEventListener('click', closeMobileMenu);
-});
-
-// target all buttons of projects
-document.querySelectorAll('.openPopupWindow').forEach((item) => {
-  item.addEventListener('click', popupWindow);
 });
 
 // open button event listener
@@ -131,13 +126,15 @@ const workProjects = [
   },
 ];
 
+// variable to hold the injected html projects
 let projectHTML = '';
 
+// iterate through the projects
 workProjects.forEach((project) => {
   projectHTML += `
     <div class="grid-items d-flex grid-item-1">
       <div class="grid-item-card text-white">
-        <div class="grid-item-card-content d-flex show-on-small hide-on-large">
+        <div class="grid-item-card-content d-flex show-on-small">
           <h2 class="font-crete-round">${project.title}</h2>
           <p class="font-inter">${project.description}</p>
           <div class="box-container d-flex">
@@ -158,4 +155,10 @@ workProjects.forEach((project) => {
     </div>`;
 });
 
+// hide-on-large
 projectsContainer.innerHTML = projectHTML;
+
+// iterate through the items and listen for popupwindow click
+document.querySelectorAll('.openPopupWindow').forEach((item) => {
+  item.addEventListener('click', popupWindow);
+});
