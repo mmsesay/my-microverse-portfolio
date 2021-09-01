@@ -13,21 +13,21 @@ const closePopupButton = document.getElementById('closePopupIcon');
 const windowWidth = window.innerWidth;
 
 // hides elements
-function hide(args) {
+const hide = (args) => {
   args.forEach((arg) => {
     arg.style.display = 'none';
   });
 }
 
 // show elements
-function show(args) {
+const show = (args) => {
   args.forEach((arg) => {
     arg.style.display = 'flex';
   });
 }
 
 // blur elements
-function blurElements(args, state) {
+const blurElements= (args, state) => {
   args.forEach((element) => {
     if (state) {
       element.style.filter = 'blur(3px)';
@@ -37,13 +37,13 @@ function blurElements(args, state) {
   });
 }
 
-function closeMobileMenu() {
+const closeMobileMenu = () => {
   hide([mobileMenu, closeButton]);
   show([openButton]);
   body.style.overflow = 'scroll';
 }
 
-function openMobileMenu() {
+const openMobileMenu = () => {
   hide([openButton]);
   show([mobileMenu, closeButton]);
   body.style.overflow = 'hidden';
@@ -192,12 +192,12 @@ workProjects.forEach((project, index) => {
 // project container
 projectsContainer.innerHTML = projectHTML;
 
-function popupWindow() {
+const popupWindow =() => {
   show([popupContainer]);
-  body.style.overflow = 'hidden';
+  // body.style.overflow = 'hidden';
 }
 
-function closePopupWindow() {
+const closePopupWindow = () => {
   hide([popupContainer]);
   body.style.overflow = 'scroll';
   blurElements([headlineSection, portfolioSection, aboutSection, contactSection], false);
