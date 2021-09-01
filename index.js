@@ -6,6 +6,10 @@ const closeButton = document.getElementById('times');
 const popupContainer = document.querySelector('.popup-container');
 const projectsContainer = document.querySelector('.grid-container');
 const closePopupIcon = document.getElementById('closePopupIcon');
+const headlineSection = document.querySelector('.headline-section');
+const portfolioSection = document.getElementById('portfolio');
+const aboutSection = document.getElementById('about');
+const contactSection = document.getElementById('contact');
 
 // hides elements
 function hide(args) {
@@ -18,6 +22,17 @@ function hide(args) {
 function show(args) {
   args.forEach((arg) => {
     arg.style.display = 'flex';
+  });
+}
+
+// blur elements
+function blurElements(args, state) {
+  args.forEach((element) => {
+    if (state) {
+      element.style.filter = 'blur(3px)';
+    } else {
+      element.style.filter = 'blur(0px)';
+    }
   });
 }
 
@@ -40,6 +55,7 @@ function popupWindow() {
 
 function closePopupWindow() {
   hide([popupContainer]);
+  blurElements([headlineSection, portfolioSection, aboutSection, contactSection], false);
   body.style.overflow = 'scroll';
 }
 
@@ -53,8 +69,6 @@ openButton.addEventListener('click', openMobileMenu);
 
 // close button event listener
 closeButton.addEventListener('click', closeMobileMenu);
-
-closePopupIcon.addEventListener('click', closePopupWindow);
 
 // Projects Dynamic data
 const workProjects = [
@@ -160,5 +174,10 @@ projectsContainer.innerHTML = projectHTML;
 
 // iterate through the items and listen for popupwindow click
 document.querySelectorAll('.openPopupWindow').forEach((item) => {
-  item.addEventListener('click', popupWindow);
+  item.addEventListener('click', () => {
+    popupWindow(),
+    blurElements([headlineSection, portfolioSection, aboutSection, contactSection], true);
+  });
 });
+
+closePopupIcon.addEventListener('click', closePopupWindow);
