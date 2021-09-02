@@ -228,3 +228,20 @@ form.addEventListener('submit', (e) => {
     error.style.fontFamily = 'Roboto, sans-serif';
   }
 });
+
+// Local storage
+const fullName = document.getElementById('name');
+const message = document.getElementById('message');
+
+// form event listener for inputs
+form.addEventListener('input', () => {
+  // form objects
+  const formObject = {
+    fullNameInput: fullName.value,
+    emailInput: email.value,
+    messageInput: message.value,
+  };
+
+  // setting the form data to the local storage
+  localStorage.setItem('formData', JSON.stringify(formObject));
+});
