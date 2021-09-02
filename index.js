@@ -224,5 +224,6 @@ form.addEventListener('submit', (e) => {
     error.style.display = 'block';
     error.textContent = 'Please use lowercase characters for your email';
     error.style.color = 'red';
+    error.style.fontFamily = 'Roboto, sans-serif';
   }  
 });
