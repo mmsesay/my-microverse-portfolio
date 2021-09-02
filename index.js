@@ -213,3 +213,16 @@ document.querySelectorAll('.openPopupWindow').forEach((item) => {
     blurElements([headlineSection, portfolioSection, aboutSection, contactSection], true);
   });
 });
+
+// Contact Form Validation 
+const form = document.querySelector('form');
+const error = document.querySelector('.error-message');
+
+form.addEventListener('submit', (e) => {
+  if (email.value !== email.value.toLowerCase()) {
+    e.preventDefault();
+    error.style.display = 'block';
+    error.textContent = 'Please use lowercase characters for your email';
+    error.style.color = 'red';
+  }  
+});
