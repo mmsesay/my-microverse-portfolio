@@ -483,6 +483,7 @@ footer .footer-icons > li {
 
 #mobile-menu > nav {
   margin-left: -20px;
+  width: 100%;
 }
 
 #mobile-menu > nav > ul {
