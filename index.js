@@ -245,3 +245,11 @@ form.addEventListener('input', () => {
   // setting the form data to the local storage
   localStorage.setItem('formData', JSON.stringify(formObject));
 });
+
+// extracting data from local storage
+const fetchdata = JSON.parse(localStorage.getItem('formData'));
+if (fetchdata) {
+  fullName.value = fetchdata.fullNameInput;
+  message.value = fetchdata.messageInput;
+  email.value = fetchdata.emailInput;
+}
