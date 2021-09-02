@@ -214,7 +214,7 @@ document.querySelectorAll('.openPopupWindow').forEach((item) => {
   });
 });
 
-// Contact Form Validation 
+// Contact Form Validation
 const form = document.querySelector('form');
 const error = document.querySelector('.error-message');
 
@@ -225,5 +225,5 @@ form.addEventListener('submit', (e) => {
     error.textContent = 'Please use lowercase characters for your email';
     error.style.color = 'red';
     error.style.fontFamily = 'Roboto, sans-serif';
-  }  
+  }
 });
